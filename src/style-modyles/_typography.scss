@@ -1,0 +1,61 @@
+.heading-primary{
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+    color: $color-black-1;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .12);
+    @include min-width($screen-desktop) {
+        font-size: 2.8rem;
+    }
+    &__about {
+        margin-bottom: 1rem;    
+        @include min-width($screen-desktop) {
+            margin-bottom: 1.5rem;    
+        }
+    }
+    &__experience {
+        text-align: center;
+        margin-bottom: 2rem;
+        @include min-width($screen-desktop) {
+            margin-bottom: 2.5rem;            
+        }
+    }
+    &__contact {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    &:not(:last-child){        
+        margin-bottom: 1rem;
+        @include min-width($screen-desktop)  {
+            margin-bottom: 2rem;    
+        }
+    }
+    text-align: justify;
+}
+
+h2{
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;   
+    letter-spacing: .5px;
+    color: #fff;
+}
+
+.reply {
+    &__greeting{
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+    &__body,
+    &__signature {
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+}
